@@ -27,7 +27,7 @@ export default function DonatePage() {
         </header>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          {/* Buy Me A Coffee / Ko-fi */}
+
           <a href="https://ko-fi.com" target="_blank" className="p-8 bg-zinc-950 border border-zinc-900 hover:border-cyan-500 transition-all group relative">
             <div className="text-cyan-500 mb-4 text-3xl italic">01/</div>
             <h3 className="text-xl font-black uppercase mb-2">Ko-fi / Coffee</h3>
@@ -37,7 +37,6 @@ export default function DonatePage() {
 
           
 
-          {/* PayPal */}
           <a href="https://paypal.me" target="_blank" className="p-8 bg-zinc-950 border border-zinc-900 hover:border-cyan-500 transition-all group relative">
             <div className="text-cyan-500 mb-4 text-3xl italic">03/</div>
             <h3 className="text-xl font-black uppercase mb-2">Direct PayPal</h3>
@@ -46,7 +45,6 @@ export default function DonatePage() {
           </a>
         </div>
 
-        {/* Crypto Section */}
         <div className="bg-zinc-950 border border-zinc-900 p-10 relative overflow-hidden">
           <div className="absolute top-0 right-0 p-4 text-[8px] text-zinc-800 font-black tracking-widest uppercase">Encryption_Required</div>
           <h2 className="text-2xl font-black uppercase mb-10 italic border-b border-zinc-900 pb-4">Crypto Donations</h2>
@@ -72,7 +70,6 @@ export default function DonatePage() {
           </div>
         </div>
 
-        {/* Support Palestine Footer */}
         <div className="mt-16 p-8 border border-cyan-500/20 bg-cyan-950/5 flex flex-col items-center text-center">
             <span className="text-4xl mb-4">🇵🇸</span>
             <h3 className="text-xl font-black uppercase text-cyan-400 mb-2">Solidarity Note</h3>
