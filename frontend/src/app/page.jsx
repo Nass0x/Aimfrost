@@ -34,8 +34,8 @@ export default function HomePage() {
             <a href="/tools" className="btn-primary">
               Launch Suite
             </a>
-            <a href="#vision" className="btn-secondary">
-              Protocol Log
+            <a href='/documentation' className="btn-secondary">
+              Check Documentation
             </a>
           </div>
         </div>
