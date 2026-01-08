@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
       <body className="bg-black text-white antialiased selection:bg-cyan-500/30 font-mono min-h-screen flex flex-col">
         
         <nav className="border-b border-cyan-500/20 bg-black/80 backdrop-blur-md sticky top-0 z-50">
-          <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <div className="max-w-7xl mx-auto px-6 h-25 flex items-center justify-between">
             
             <a href='/' className="group flex items-center">
               <div className="relative w-40 h-auto"> 
@@ -24,11 +24,11 @@ export default function RootLayout({ children }) {
             </a>
 
             <div className="hidden md:flex items-center space-x-10">
-              <a href="/tools" className="text-[15px] text-zinc-400 hover:text-cyan-400 font-bold transition-all tracking-[0.2em] uppercase">Tools</a>
-              <a href="/documentation" className="text-[15px] text-zinc-400 hover:text-cyan-400 font-bold transition-all tracking-[0.2em] uppercase">Docs</a>
-              <a href="/about" className="text-[15px] text-zinc-400 hover:text-cyan-400 font-bold transition-all tracking-[0.2em] uppercase">About</a>
-              <a href="/contact" className="text-[15px] text-zinc-400 hover:text-cyan-400 font-bold transition-all tracking-[0.2em] uppercase">Contact</a>
-              <a href="/shop" className="border border-cyan-500/30 px-5 py-1.5 rounded-sm text-[13px] font-black hover:bg-cyan-500/10 hover:border-cyan-400 transition-all tracking-widest uppercase text-cyan-400">Support</a>
+              <a href="/tools" className="text-[15px] text-white hover:text-cyan-400 font-bold transition-all tracking-[0.2em] uppercase">Tools</a>
+              <a href="/documentation" className="text-[15px] text-white hover:text-cyan-400 font-bold transition-all tracking-[0.2em] uppercase">Docs</a>
+              <a href="/about" className="text-[15px] text-white hover:text-cyan-400 font-bold transition-all tracking-[0.2em] uppercase">About</a>
+              <a href="/contact" className="text-[15px] text-white hover:text-cyan-400 font-bold transition-all tracking-[0.2em] uppercase">Contact</a>
+              <a href="/donate" className="border border-cyan-500/30 px-5 py-1.5 rounded-sm text-[13px] font-black hover:bg-cyan-500/10 hover:border-cyan-400 transition-all tracking-widest uppercase text-cyan-400">Support</a>
             </div>
 
             <button 
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
               <a href="/documentation" className="text-sm font-bold tracking-widest text-zinc-400 hover:text-cyan-400 uppercase">Docs</a>
               <a href="/about" className="text-sm font-bold tracking-widest text-zinc-400 hover:text-cyan-400 uppercase">About</a>
               <a href="/contact" className="text-sm font-bold tracking-widest text-zinc-400 hover:text-cyan-400 uppercase">Contact</a>
-              <a href="/shop" className="text-sm font-bold tracking-widest text-cyan-400 border border-cyan-500/30 p-2 text-center uppercase">Support</a>
+              <a href="/donate" className="text-sm font-bold tracking-widest text-cyan-400 border border-cyan-500/30 p-2 text-center uppercase">Support</a>
             </div>
           </div>
         </nav>
