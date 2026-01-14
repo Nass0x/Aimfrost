@@ -2,17 +2,17 @@ FROM php:8.1-apache
 
 
 RUN apt-get update && apt-get install -y \
-    nmap whois python3 python3-pip golang git curl \
+    nmap whois python3 python3-pip curl git \
     && rm -rf /var/lib/apt/lists/*
 
 
-RUN go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest \
-    && go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest \
-    && go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest \
-    && go install -v github.com/projectdiscovery/tlsx/cmd/tlsx@latest
+
+RUN curl -sL https://github.com/projectdiscovery/subfinder/releases/download/v2.6.6/subfinder_2.6.6_linux_amd64.zip -o subfinder.zip \
+    && apt-get update && apt-get install -y unzip && unzip subfinder.zip && mv subfinder /usr/local/bin/ && rm subfinder.zip
 
 
-RUN cp /root/go/bin/* /usr/local/bin/
+RUN curl -sL https://github.com/projectdiscovery/naabu/releases/download/v2.3.1/naabu_2.3.1_linux_amd64.zip -o naabu.zip \
+    && unzip naabu.zip && mv naabu /usr/local/bin/ && rm naabu.zip
 
 
 RUN git clone https://github.com/sherlock-project/sherlock.git /opt/sherlock \
