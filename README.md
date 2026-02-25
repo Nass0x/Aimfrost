@@ -30,10 +30,13 @@
 
 ```bash
 # Clone the repository
-git clone [https://github.com/Nass0x/Aimfrost.git](https://github.com/Nass0x/Aimfrost.git)
+git clone https://github.com/Nass0x/Aimfrost.git
 
 # Install dependencies
 npm install
 
 # Start the development server
 npm run dev
+
+```
+[Visit Aimfrost Live Demo](https://aimfrost-osint.vercel.app/)
